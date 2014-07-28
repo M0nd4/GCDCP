@@ -8,6 +8,8 @@
 ## 5. Creates a second, independent tidy data set with the average of         ##
 ## each variable for each activity and each subject.                          ##
 ################################################################################
+## Reference: https://github.com/sumatheja/datacleaning_courseproject
+
 
 ##------------------------------------------------------------------------------
 #### Part1. Reading subject_train, X_train, y_train from the folder 'train'.
