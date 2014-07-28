@@ -1,6 +1,4 @@
-This file describes the variables, the data, and any transformations or work that I have performed to clean up the data.
-========
-## The run_analysis.R script performs the following steps to clean the data:
+## The script performs the following steps to clean the data:
 
 1. Read X_train.txt, y_train.txt, subject_train.txt from "./data/train" and safe in "trainX", "trainY" and "trainSubject" respectively.
 2. Read X_test.txt, y_test.txt, subject_test.txt from "./data/test" and safe in "testData", "testLabel" and "testsubject" respectively.
