@@ -1,4 +1,6 @@
-## The script performs the following steps to clean the data:
+Codebook
+========
+The script performs the following steps to clean the data:
 
 1. Read X_train.txt, y_train.txt, subject_train.txt from "./data/train" and safe in "trainX", "trainY" and "trainSubject" respectively.
 2. Read X_test.txt, y_test.txt, subject_test.txt from "./data/test" and safe in "testData", "testLabel" and "testsubject" respectively.
@@ -13,3 +15,73 @@
 11. Generate a second independent tidy data set with the average of each measurement for each activity and each subject. 
  We have 30 unique subjects and 6 unique activities, which result in a 180 combinations of the two. For each combination, we calculate the mean of each measurement with the corresponding combination. So, after initializing the result data frame and performing the two for-loops, we get a 180x68 data frame.
 Write the result out to "tidydata.txt" file in current working directory.
+
+The columns are:
+* Subject
+* Activity
+* tBodyAccMeanX
+* tBodyAccMeanY
+* tBodyAccMeanZ
+* tBodyAccStdX
+* tBodyAccStdY
+* tBodyAccStdZ
+* tGravityAccMeanX
+* tGravityAccMeanY
+* tGravityAccMeanZ
+* tGravityAccStdX
+* tGravityAccStdY
+* tGravityAccStdZ
+* tBodyAccJerkMeanX
+* tBodyAccJerkMeanY
+* tBodyAccJerkMeanZ
+* tBodyAccJerkStdX
+* tBodyAccJerkStdY
+* tBodyAccJerkStdZ
+* tBodyGyroMeanX
+* tBodyGyroMeanY
+* tBodyGyroMeanZ
+* tBodyGyroStdX
+* tBodyGyroStdY
+* tBodyGyroStdZ
+* tBodyGyroJerkMeanX
+* tBodyGyroJerkMeanY
+* tBodyGyroJerkMeanZ
+* tBodyGyroJerkStdX
+* tBodyGyroJerkStdY
+* tBodyGyroJerkStdZ
+* tBodyAccMagMean
+* tBodyAccMagStd
+* tGravityAccMagMean
+* tGravityAccMagStd
+* tBodyAccJerkMagMean
+* tBodyAccJerkMagStd
+* tBodyGyroMagMean
+* tBodyGyroMagStd
+* tBodyGyroJerkMagMean
+* tBodyGyroJerkMagStd
+* fBodyAccMeanX
+* fBodyAccMeanY
+* fBodyAccMeanZ
+* fBodyAccStdX
+* fBodyAccStdY
+* fBodyAccStdZ
+* fBodyAccJerkMeanX
+* fBodyAccJerkMeanY
+* fBodyAccJerkMeanZ
+* fBodyAccJerkStdX
+* fBodyAccJerkStdY
+* fBodyAccJerkStdZ
+* fBodyGyroMeanX
+* fBodyGyroMeanY
+* fBodyGyroMeanZ
+* fBodyGyroStdX
+* fBodyGyroStdY
+* fBodyGyroStdZ
+* fBodyAccMagMean
+* fBodyAccMagStd
+* fBodyBodyAccJerkMagMean
+* fBodyBodyAccJerkMagStd
+* fBodyBodyGyroMagMean
+* fBodyBodyGyroMagStd
+* fBodyBodyGyroJerkMagMean
+* fBodyBodyGyroJerkMagStd
