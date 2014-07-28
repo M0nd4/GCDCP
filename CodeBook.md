@@ -16,72 +16,108 @@ The script performs the following steps to clean the data:
  We have 30 unique subjects and 6 unique activities, which result in a 180 combinations of the two. For each combination, we calculate the mean of each measurement with the corresponding combination. So, after initializing the result data frame and performing the two for-loops, we get a 180x68 data frame.
 Write the result out to "tidydata.txt" file in current working directory.
 
-The columns are:
-* Subject
-* Activity
-* tBodyAccMeanX
-* tBodyAccMeanY
-* tBodyAccMeanZ
-* tBodyAccStdX
-* tBodyAccStdY
-* tBodyAccStdZ
-* tGravityAccMeanX
-* tGravityAccMeanY
-* tGravityAccMeanZ
-* tGravityAccStdX
-* tGravityAccStdY
-* tGravityAccStdZ
-* tBodyAccJerkMeanX
-* tBodyAccJerkMeanY
-* tBodyAccJerkMeanZ
-* tBodyAccJerkStdX
-* tBodyAccJerkStdY
-* tBodyAccJerkStdZ
-* tBodyGyroMeanX
-* tBodyGyroMeanY
-* tBodyGyroMeanZ
-* tBodyGyroStdX
-* tBodyGyroStdY
-* tBodyGyroStdZ
-* tBodyGyroJerkMeanX
-* tBodyGyroJerkMeanY
-* tBodyGyroJerkMeanZ
-* tBodyGyroJerkStdX
-* tBodyGyroJerkStdY
-* tBodyGyroJerkStdZ
-* tBodyAccMagMean
-* tBodyAccMagStd
-* tGravityAccMagMean
-* tGravityAccMagStd
-* tBodyAccJerkMagMean
-* tBodyAccJerkMagStd
-* tBodyGyroMagMean
-* tBodyGyroMagStd
-* tBodyGyroJerkMagMean
-* tBodyGyroJerkMagStd
-* fBodyAccMeanX
-* fBodyAccMeanY
-* fBodyAccMeanZ
-* fBodyAccStdX
-* fBodyAccStdY
-* fBodyAccStdZ
-* fBodyAccJerkMeanX
-* fBodyAccJerkMeanY
-* fBodyAccJerkMeanZ
-* fBodyAccJerkStdX
-* fBodyAccJerkStdY
-* fBodyAccJerkStdZ
-* fBodyGyroMeanX
-* fBodyGyroMeanY
-* fBodyGyroMeanZ
-* fBodyGyroStdX
-* fBodyGyroStdY
-* fBodyGyroStdZ
-* fBodyAccMagMean
-* fBodyAccMagStd
-* fBodyBodyAccJerkMagMean
-* fBodyBodyAccJerkMagStd
-* fBodyBodyGyroMagMean
-* fBodyBodyGyroMagStd
-* fBodyBodyGyroJerkMagMean
-* fBodyBodyGyroJerkMagStd
+
+
+#### Data Dictionary - Human Activity Recognition Using Smartphones Data Set
+
+- Activity
+
+        The activity was performed while wearing a smartphone
+                1 walking
+                2 walking_upstairs
+                3 walking_downstairs
+                4 sitting
+                5 standing
+                6 laying
+
+-  Subject
+
+        An identifier of the subject who carried out the experiment
+                1 .. 30
+
+
+**time domain signals denoted by prefix 't'**
+
+- tBodyAcc_XYZ
+
+        body acceleration signals (3-axial)
+
+- tGravityAcc_XYZ
+
+        gravity acceleration signals (3-axial)
+
+- tBodyAccJerk_XYZ
+
+        Jerk signals derived from body linear acceleration (3-axial)
+
+- tBodyGyro_XYZ
+
+        gyroscope signals (3-axial)
+
+- tBodyGyroJerk_XYZ
+
+        Jerk signals derived from angular velocity (3-axial)
+
+- tBodyAccMag
+
+        Euclidean norm of body acceleration signals
+
+- tGravityAccMag
+
+        Euclidean norm of gravity acceleration signals
+
+- tBodyAccJerkMag
+
+        Euclidean norm of Jerk signals derived from body linear acceleration
+
+- tBodyGyroMag
+
+        Euclidean norm of gyroscope signals
+
+- tBodyGyroJerkMag
+
+        Euclidean norm of Jerk signals derived from angular velocity
+
+
+**frequency domain signals denoted by prefix 'f'**
+
+- fBodyAcc_XYZ
+
+        FFT of body acceleration signals (3-axial)
+
+- fBodyAccJerk_XYZ
+
+        FFT of Jerk signals derived from body linear acceleration (3-axial)
+
+- fBodyGyro_XYZ
+
+        FFT of gyroscope signals (3-axial)
+
+- fBodyAccMag
+
+        FFT of Euclidean norm of body acceleration signals
+
+- fBodyAccJerkMag
+
+        FFT of Euclidean norm of Jerk signals derived from body linear acceleration
+
+- fBodyGyroMag
+
+        FFT of Euclidean norm of gyroscope signals
+
+- fBodyGyroJerkMag
+
+        FFT of Euclidean norm of Jerk signals derived from angular velocity
+
+
+**The set of variables that were estimated from these signals**
+
+- Mean
+
+        Mean value
+
+- Std
+
+        Standard deviation
+
+
